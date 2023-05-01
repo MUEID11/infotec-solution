@@ -19,3 +19,19 @@ navBar.forEach(function (a){
         navCollapse.classList.remove("show");
     })
 })
+//send email
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "A noob",
+        Password : "#*+aaammhm",
+        To : 'anoobbf11@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById("name").value + "<br> Email:" + document.getElementById("email")
+                 + "<br> Subject:" + document.getElementById("subject").value 
+                 + "<br> Message:" + document.getElementById("message").value
+    }).then(
+      message => alert("Massage sent sucessfully")
+    );
+}

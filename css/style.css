@@ -459,3 +459,30 @@ p{
 .footer_part .footer-text a{
     color:var(--primary-color);
 }
+/* contact us*/
+.contact_us .newsletter{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/subscribe-bg.webp');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    padding: 9.375rem 0;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    margin-right:3.5rem;
+}
+.inputs input{
+    border:#2d2d2d 1;
+
+}
+#massege{
+    resize: none;
+    width: 100%;
+    height: 55%;
+    right: 0;
+}
